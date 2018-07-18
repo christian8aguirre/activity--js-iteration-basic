@@ -16,6 +16,15 @@
 //
 //------------------------------------------------------------------
 
+function getAllGreaterThan(number, list) {
+    newList = [];
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] > number){
+            newList.push(list[i]);
+        }
+    }
+    return newList;
+}
 
 // *** DONT TOUCH ***
 
@@ -37,3 +46,4 @@ console.assert(outputArray_2[3] === 88)
 var exampleArray_3 = [10,12,30,4,2,16,7,88]
 let outputArray_3= getAllGreaterThan(100, exampleArray_3 )
 console.assert(outputArray_3.length === 0 )
+
